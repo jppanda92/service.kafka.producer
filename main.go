@@ -8,11 +8,6 @@ import (
 	"sync"
 )
 
-// Custom struct to hold the []string data
-type StringData struct {
-	Data []string `json:"data"`
-}
-
 func main() {
 	companies, err := scraper.GetSP500Companies()
 	if err != nil {
